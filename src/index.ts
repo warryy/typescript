@@ -1,3 +1,4 @@
-let hello: string = 'hello'
+import "./data-type";
 
-document.querySelector('.app').innerHTML = hello
+const app = document.querySelector(".app");
+app && (app.innerHTML = "hello typescript");
