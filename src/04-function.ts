@@ -52,7 +52,6 @@ function add2(x: number, ...rest: number[]) {
 /**
  * 函数重载
  */
-
 function add3(...args: number[]): number;
 function add3(...args: string[]): string;
 function add3(...args: any[]): any {
