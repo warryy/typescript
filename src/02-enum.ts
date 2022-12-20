@@ -92,8 +92,7 @@ enum G {
 
 let e: E = 3
 let f: E = 4
-console.log(e)
-console.log(e === f) // false
+// console.log(e === f) // false
 
 let e1 = E.a;
 let e2 = E.b;

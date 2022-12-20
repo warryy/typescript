@@ -38,4 +38,34 @@ function getLib() {
   return lib;
 }
 
+/**
+ * 可选参数
+ */
+function add1(x: number, y?: number) {
+  return typeof y === "number" ? x + y : x;
+}
+
+function add2(x: number, ...rest: number[]) {
+  return x + rest.reduce((p, c) => p + c);
+}
+
+/**
+ * 函数重载
+ */
+
+function add3(...args: number[]): number;
+function add3(...args: string[]): string;
+function add3(...args: any[]): any {
+  let first = args[0];
+  if (typeof first === "string") {
+    return args.join("");
+  }
+  if (typeof first === "number") {
+    return args.reduce((p, c) => p + c);
+  }
+}
+
+// console.log(add3(1, 2, 3));
+// console.log(add3("a", "b", "c"));
+
 export {};
