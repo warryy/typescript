@@ -1,4 +1,3 @@
-console.log("data type file");
 /**
  * 原始类型
  * boolean, string, number, bigint
@@ -59,3 +58,5 @@ let endless = () => {
 
     }
 }
+
+export {}

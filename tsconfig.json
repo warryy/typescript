@@ -3,7 +3,6 @@
         "target": "ES5",
         "module": "amd",
         "strict": true,
-        "outFile": "test.js",
         // "strictNullChecks": false,
     },
     "include": ["src/**/*"]
