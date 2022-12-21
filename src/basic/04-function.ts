@@ -54,6 +54,7 @@ function add2(x: number, ...rest: number[]) {
  */
 function add3(...args: number[]): number;
 function add3(...args: string[]): string;
+// 在类型最宽泛的定义上实现函数
 function add3(...args: any[]): any {
   let first = args[0];
   if (typeof first === "string") {

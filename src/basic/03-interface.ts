@@ -102,3 +102,5 @@ interface Names {
   [x: string]: string | number
   [x: number]: number
 }
+
+export {};

@@ -2,6 +2,7 @@
  * 类
  * a. 类成员的属性都是实例属性, 而不是原型属性
  * b. 类成员的方法都是原型方法
+ * c. 修饰符 public, private, protected, static
  */
 
 /**
@@ -104,3 +105,5 @@ Cat.staFn();
 // cat.staFn(); // 属性“staFn”在类型“Cat”上不存在。你的意思是改为访问静态成员“Cat.staFn”吗?ts(2576)
 BuOu.staFn();
 // buou.staFn() // 属性“staFn”在类型“BuOu”上不存在。你的意思是改为访问静态成员“BuOu.staFn”吗?
+
+export {};
