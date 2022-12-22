@@ -1,8 +1,9 @@
 {
     "compilerOptions": {
         "target": "ES5",
-        "module": "amd",
+        "module": "commonjs",
         "strict": true,
+        "esModuleInterop": true,
         // "strictNullChecks": false,
     },
     "include": ["src/**/*"]
