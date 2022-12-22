@@ -1,11 +1,11 @@
-import "./basic/01-data-type.ts"
-import "./basic/02-enum.ts";
-import "./basic/03-interface.ts";
-import "./basic/04-function";
-import "./basic/05-class";
-import './basic/06-ts-abstract-class'
-import './basic/07-class-and-interface'
-import './basic/08-generics'
+// import "./01-basic/01-data-type.ts"
+// import "./01-basic/02-enum.ts";
+// import "./01-basic/03-interface.ts";
+// import "./01-basic/04-function";
+// import "./01-basic/05-class";
+// import './01-basic/06-ts-abstract-class'
+// import './01-basic/07-class-and-interface'
+// import './01-basic/08-generics'
 
 const app = document.querySelector(".app");
 app && (app.innerHTML = "hello typescript");
