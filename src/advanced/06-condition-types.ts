@@ -45,6 +45,7 @@ type Test2 = Extract<"a" | "b" | "c", "a" | "e">;
  * 去除 null 和 undefined
  */
 type Test3 = NonNullable<string | null | undefined>;
+type Test4 = NonNullable<null | undefined>;
 
 /**
  * 抽取函数返回值

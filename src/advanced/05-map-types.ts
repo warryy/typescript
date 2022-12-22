@@ -11,7 +11,7 @@ interface Obj {
 
 type ReadonlyObj = Readonly<Obj>;
 /**
- * keyof T: T 的所有属性的联合类型
+ * keyof T: 索引类型(index type)
  * P in: 相当于 for in, 将 keyof T 的联合类型映射到 P 上
  */
 type MyReadonly<T> = {
