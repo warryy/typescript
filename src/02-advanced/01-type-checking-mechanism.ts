@@ -91,12 +91,12 @@ c = b;
  * b. 函数参数的类型
  *      和接口正好相反,参数属性多的函数兼容参数属性少的函数
  */
-type Point3D {
+type Point3D = {
     x: number
     y: number
     z: number
 }
-type Point2D {
+type Point2D = {
     x: number
     y: number
 }
