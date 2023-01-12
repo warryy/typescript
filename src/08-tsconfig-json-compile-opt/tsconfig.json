@@ -1,0 +1,43 @@
+// 一般放在一起的选项通常一起使用
+{
+  "files": ["src/index.ts"],
+  "compilerOptions": {
+    /* Basic Options */
+    // "incremental": true, // 开启增量编译, 开启后, 会在项目根目录增加一个 tsconfig.tsbuildinfo 的文件
+    // "tsBuildInfoFile": "./build-info/.tsbuildinfo", // 指定增量编译开启后的输出文件名称
+    // "diagnostics": true, // 打印编译的诊断信息
+
+    "target": "ES3", // 目标语言的版本
+    // "module": "AMD", // 生成代码模块的标准
+    // "outFile": "./bundle.js", // 将多个相互依赖的文件生成一个文件, 可以用在 AMD 模块中, 需要注意的是, 如果打包没有指定入口选项, 则会把所有 ts 打包到一个文件中
+
+    // "lib": ["es2015"], // ts 需要引入的类库, 即声明文件, 更多见 readme
+
+    // "allowJs": true, // 允许编译 js 文件 [js, jsx]
+    // "checkJs": true, // 允许在 js 文件中报错, 通常与 allowJs 一起使用
+
+    "outDir": "./dist", // 指定编译产物输出的目录
+    // "rootDir": "src", // 指定输入的文件目录(用于控制输出目录结构), 如果 rootDir 为空, 则 dist 打包产物中, 会都放在 src 下
+
+    // "declaration": true, // 生成声明文件
+    // "declarationDir": "./d", // 生成声明文件的路径
+    // "emitDeclarationOnly": true, // 只生成声明文件
+
+    // "sourceMap": true, // 生成目标文件的 sourceMap
+    // "inlineSourceMap": true, // 生成目标文件的 inline sourceMap, 即 sourceMap 代码放到目标文件内部去, 不单独打出来
+
+    // "declarationMap": true, // 为声明文件生成sourceMap
+    // "typeRoots": [], // 声明文件的根目录, 默认为 node_modules/@types
+    // "types": [], // 如果我们只指定了 node_module/@types 中的某一个包, 那么将只从这一个包里加载声明文件
+
+    "removeComments": true, // 删除注释
+
+    // "noEmit": true, // 不输出任何文件, 可能光校验是否有 ts 编译报错, 但是不关心产物的时候需要
+    // "noEmitOnError": true, // 当发生错误的时候不输出任何文件
+
+    // "noEmitHelpers": true, // 不生成 helper 函数, 详见 readme
+    // "importHelpers": true, // noEmitHelpers -> true && ts 文件中有函数继承 && ts 文件是模块文件, 将自动在产物中引入 tslib 包, 
+
+    "strict": true
+  }
+}

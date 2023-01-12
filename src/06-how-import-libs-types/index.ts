@@ -52,10 +52,10 @@ numeral.myFn = () => {};
  */
 
 declare global {
-    namespace globalLib {
+    namespace GlobalLib {
         function doAnything(): void
     }
 }
-globalLib.doAnything = () => {}
+GlobalLib.doAnything = () => {}
 
 export {};

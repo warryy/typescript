@@ -1,5 +1,5 @@
 # tsconfig.json 文件相关选项
-- `demo` 使用方法: 
+## `demo` 使用方法: 
 1. `cd src/07-tsconfig-json && tsc`
 2. 测试时递归删除所有文件夹下面的 js 文件:
 `find . -name "*.js" -type f -print -exec rm {} \; && tsc`

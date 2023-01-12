@@ -7,3 +7,6 @@ dist
 .DS_Store
 .AppleDouble
 .LSOverride
+
+# ts 开启 incremental 增量编译选项后默认添加的文件
+tsconfig.tsbuildinfo
