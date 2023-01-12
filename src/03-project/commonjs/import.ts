@@ -1,7 +1,6 @@
 /**
  * 导入
  *      a. node 默认会找 js 文件, 所以 ts 文件正常模式下无法引入, 需要 ts-node 来兼容 npm i -g ts-node
- *      b.
  */
 
 let commonjs = require("./export");

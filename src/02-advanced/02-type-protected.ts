@@ -4,6 +4,7 @@
  *      b. instanceof
  *      c. typeof
  *      d: is: type predicates(类型谓词)
+ * 类型收窄
  */
 
 class Cat {
@@ -55,9 +56,21 @@ function play(animal: Cat | Dog) {
 }
 
 function getLen(arg: string | Number) {
-    // 使用 typeof
-    if (typeof arg === 'string') {
-        return arg.length
-    }
-    return arg.toString().length
+  // 使用 typeof
+  if (typeof arg === "string") {
+    return arg.length;
+  }
+  return arg.toString().length;
 }
+
+let a = "asdf";
+a; // string
+
+/**
+ * narrowing types using 'as const'
+ * 通过使用 as const 来进行类型收窄
+ */
+let b = "asdf" as const;
+b; // 'asdf'
+
+export {}

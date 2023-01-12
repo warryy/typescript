@@ -44,6 +44,7 @@ class Cat {
   //   }
   constructor(n: string) {
     this.name = n;
+    this.protect = `${n}(受保护的猫原名)`
   }
   name: string;
   private priFn() {}
@@ -58,8 +59,10 @@ class BuOu extends Cat {
   constructor(n: string, c: string) {
     super(n);
     this.color = c;
+    this.protect = `${this.protect}(受保护的布偶原名)`
   }
   color: string;
+  // hello() {console.log(this.pri)} // Property 'pri' is private and only accessible within class 'Cat'.
 }
 
 const cat = new Cat("小花");

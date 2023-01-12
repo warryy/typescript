@@ -5,13 +5,15 @@
   "main": "./src/index.ts",
   "scripts": {
     "start": "webpack-dev-server --mode=development --config ./build/webpack.config.js",
-    "build": "webpack --mode=production --config ./build/webpack.config.js"
+    "start:static": "tsc src/04-namespace/b.ts && webpack-dev-server --mode=development --config ./build/webpack.config.js",
+    "build": "tsc src/04-namespace/b.ts && webpack --mode=production --config ./build/webpack.config.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
     "html-webpack-plugin": "^5.5.0",
     "ts-loader": "^9.4.2",
     "ts-node": "^10.9.1",
