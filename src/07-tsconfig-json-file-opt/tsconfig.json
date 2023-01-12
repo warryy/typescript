@@ -1,0 +1,24 @@
+{
+    "extends": "./tsconfig.base.json",
+    // tsc 默认编译文件夹下所有 .ts 文件, files 可以指定编译某些文件
+    "files": [
+        "src/a.ts"
+    ],
+    // 会编译 include 里面指定的所有文件, 和 files 取并集
+    // 如果写 `src`, 则只会编译 src 目录下的所有文件
+    // 如果写 `src/*`, 则只会编译 src 目录下一级目录下的文件
+    // 如果写 `src/*/*`, 则只会编译 src 目录下所有二级目录下的文件
+    // 如果写 `src/**/haha.ts`, 则只会编译 src 目录下所有文件夹中的 haha.ts
+    "include": [
+        "src/lib",
+        "src/b.ts"
+    ],
+    // 排除的文件
+    // exclude 和 files 冲突的时候, files 优先
+    // exclude 和 include 冲突的时候, exclude 优先
+    "exclude": [
+        "src/**/exclude*.ts",
+        "src/a.ts",
+        "src/b.ts",
+    ],
+}
