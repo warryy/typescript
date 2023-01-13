@@ -9,3 +9,5 @@ class A {}
 class B extends A {}
 
 export = B
+
+const a = [1,2, ...[3]]

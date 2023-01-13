@@ -37,7 +37,8 @@
 
     // "noEmitHelpers": true, // 不生成 helper 函数, 详见 readme
     // "importHelpers": true, // noEmitHelpers -> true && ts 文件中有函数继承 && ts 文件是模块文件, 将自动在产物中引入 tslib 包, 
+    // "downlevelIteration": true, // 遍历器的低级实现 es3/5
 
-    "strict": true
+    // "strict": true
   }
 }
