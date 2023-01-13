@@ -7,7 +7,7 @@
     // "tsBuildInfoFile": "./build-info/.tsbuildinfo", // 指定增量编译开启后的输出文件名称
     // "diagnostics": true, // 打印编译的诊断信息
 
-    "target": "ES3", // 目标语言的版本
+    // "target": "ES5", // 目标语言的版本
     // "module": "AMD", // 生成代码模块的标准
     // "outFile": "./bundle.js", // 将多个相互依赖的文件生成一个文件, 可以用在 AMD 模块中, 需要注意的是, 如果打包没有指定入口选项, 则会把所有 ts 打包到一个文件中
 
