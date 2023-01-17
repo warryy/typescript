@@ -7,7 +7,7 @@
     // "tsBuildInfoFile": "./build-info/.tsbuildinfo", // 指定增量编译开启后的输出文件名称
     // "diagnostics": true, // 打印编译的诊断信息
 
-    // "target": "ES5", // 目标语言的版本
+    "target": "ES3", // 目标语言的版本
     // "module": "AMD", // 生成代码模块的标准
     // "outFile": "./bundle.js", // 将多个相互依赖的文件生成一个文件, 可以用在 AMD 模块中, 需要注意的是, 如果打包没有指定入口选项, 则会把所有 ts 打包到一个文件中
 
@@ -19,9 +19,9 @@
     "outDir": "./dist", // 指定编译产物输出的目录
     // "rootDir": "src", // 指定输入的文件目录(用于控制输出目录结构), 如果 rootDir 为空, 则 dist 打包产物中, 会都放在 src 下
 
-    // "declaration": true, // 生成声明文件
-    // "declarationDir": "./d", // 生成声明文件的路径
-    // "emitDeclarationOnly": true, // 只生成声明文件
+    "declaration": true, // 生成声明文件
+    "declarationDir": "./dist", // 生成声明文件的路径
+    "emitDeclarationOnly": true, // 只生成声明文件
 
     // "sourceMap": true, // 生成目标文件的 sourceMap
     // "inlineSourceMap": true, // 生成目标文件的 inline sourceMap, 即 sourceMap 代码放到目标文件内部去, 不单独打出来
@@ -30,7 +30,7 @@
     // "typeRoots": [], // 声明文件的根目录, 默认为 node_modules/@types
     // "types": [], // 如果我们只指定了 node_module/@types 中的某一个包, 那么将只从这一个包里加载声明文件
 
-    "removeComments": true, // 删除注释
+    "removeComments": false, // 删除注释
 
     // "noEmit": true, // 不输出任何文件, 可能光校验是否有 ts 编译报错, 但是不关心产物的时候需要
     // "noEmitOnError": true, // 当发生错误的时候不输出任何文件
@@ -38,6 +38,13 @@
     // "noEmitHelpers": true, // 不生成 helper 函数, 详见 readme
     // "importHelpers": true, // noEmitHelpers -> true && ts 文件中有函数继承 && ts 文件是模块文件, 将自动在产物中引入 tslib 包, 
     // "downlevelIteration": true, // 遍历器的低级实现 es3/5
+
+    "strict": true, // 开启所有严格的类型检查
+    // "alwaysStrict": false, // 在代码中注入 "use strict"
+    // "noImplicitAny": false, // 不允许隐式(implicitly)的 any 类型
+    // "strictNullChecks": false, // 不允许把 null 和 undefined 赋值给其它类型的变量
+    // "strictFunctionTypes": false, // 不允许函数类型双向协变, https://www.typescriptlang.org/tsconfig#strictFunctionTypes
+    "strictPropertyInitialization": false, // 类的实例属性必须被初始化, error
 
     // "strict": true
   }
