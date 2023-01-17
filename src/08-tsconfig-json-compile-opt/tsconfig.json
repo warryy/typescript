@@ -19,9 +19,9 @@
     "outDir": "./dist", // 指定编译产物输出的目录
     // "rootDir": "src", // 指定输入的文件目录(用于控制输出目录结构), 如果 rootDir 为空, 则 dist 打包产物中, 会都放在 src 下
 
-    "declaration": true, // 生成声明文件
-    "declarationDir": "./dist", // 生成声明文件的路径
-    "emitDeclarationOnly": true, // 只生成声明文件
+    // "declaration": true, // 生成声明文件
+    // "declarationDir": "./dist", // 生成声明文件的路径
+    // "emitDeclarationOnly": true, // 只生成声明文件
 
     // "sourceMap": true, // 生成目标文件的 sourceMap
     // "inlineSourceMap": true, // 生成目标文件的 inline sourceMap, 即 sourceMap 代码放到目标文件内部去, 不单独打出来
@@ -36,7 +36,7 @@
     // "noEmitOnError": true, // 当发生错误的时候不输出任何文件
 
     // "noEmitHelpers": true, // 不生成 helper 函数, 详见 readme
-    // "importHelpers": true, // noEmitHelpers -> true && ts 文件中有函数继承 && ts 文件是模块文件, 将自动在产物中引入 tslib 包, 
+    // "importHelpers": true, // noEmitHelpers -> true && ts 文件中有函数继承 && ts 文件是模块文件, 将自动在产物中引入 tslib 包,
     // "downlevelIteration": true, // 遍历器的低级实现 es3/5
 
     "strict": true, // 开启所有严格的类型检查
@@ -44,7 +44,26 @@
     // "noImplicitAny": false, // 不允许隐式(implicitly)的 any 类型
     // "strictNullChecks": false, // 不允许把 null 和 undefined 赋值给其它类型的变量
     // "strictFunctionTypes": false, // 不允许函数类型双向协变, https://www.typescriptlang.org/tsconfig#strictFunctionTypes
-    "strictPropertyInitialization": false, // 类的实例属性必须被初始化, error
+    // "strictPropertyInitialization": false, // 类的实例属性必须被初始化, error
+    // "strictBindCallApply": false, // 严格的 bind / call / apply 参数类型检查
+    // "noImplicitThis": false, // 不允许 this 有隐式的 any 类型
+
+    // "noUnusedLocals": true, // 检查已声明, 未使用的局部变量
+    // "noUnusedParameters": true, // 检查未使用的函数参数
+    // "noFallthroughCasesInSwitch": true, // 防止 switch 语句贯穿(即某个 case 没有break)
+    // "noImplicitReturns": true, // 函数判断分支中没有返回值
+
+    // "esModuleInterop": true, // 允许 export = 导出, 由 import from 导入
+    // "allowUmdGlobalAccess": true, //
+    // "moduleResolution": "node", // ts 采用的模块解析策略 https://www.typescriptlang.org/tsconfig#moduleResolution
+    "baseUrl": "./", // ts 模块路径相对位置引用时的相对路径, 默认是当前路径
+    // "paths": { // 重写包的路径, 比如想引入简版 jquery, 注意, 此时 jquery 后面的路径是相对与 baseUrl 的
+    //   "jquery": ["node_modules/jquery/dist/jquery.slim.min.js"]
+    // },
+    // "rootDirs": ["src", "out"], // https://www.typescriptlang.org/tsconfig#rootDirs, 多个文件夹合并成一个虚拟的文件夹, 从而可以使得 src/a.ts 通过 import {b} from './b' 来引入 out/b.ts
+
+    "listEmittedFiles": true, // 打印编译后输出的文件
+    "listFiles": true // 打印被编译的文件 (包括引用的生命文件)
 
     // "strict": true
   }
